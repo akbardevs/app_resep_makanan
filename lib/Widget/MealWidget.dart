@@ -53,7 +53,7 @@ class _MealWidgetState extends State<MealWidget> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.only(left: 10, top: 20),
+          padding: EdgeInsets.only(left: 10,),
           child: Text(
             "Meal Category".toUpperCase(),
             style: TextStyle(
@@ -138,7 +138,7 @@ class _MealWidgetState extends State<MealWidget> {
             physics: NeverScrollableScrollPhysics(),
             gridDelegate:
             new SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3),
+                crossAxisCount: 2),
             shrinkWrap: true,
             itemCount: meal.length,
             itemBuilder: (context, index) {
@@ -180,7 +180,7 @@ class _MealWidgetState extends State<MealWidget> {
                         Hero(
                           tag: "avatar-$index",
                           child: Container(
-                              height: 50.0,
+                              height: 100.0,
                               decoration: new BoxDecoration(
                                 borderRadius:
                                 BorderRadius.all(Radius.circular(10.0)),
